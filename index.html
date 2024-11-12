@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>纪念日倒计时</title>
+    <link rel="stylesheet" href="Intro.css">
+</head>
+<body>
+    <div class="intro">
+        <!-- 第一部分：标题 -->
+        <div class="intro-header">
+            <h1 id="autotype">99</h1>
+        </div>
+
+        <!-- 第二部分：纪念日倒计时 -->
+        <div class="date" id="date">
+            <p>我们已经一起走过了: <span id="days">9999999</span> 天 <span id="hours">9</span> 小时 <span id="minutes">9</span> 分 <span id="seconds">9</span> 秒</p>
+        </div>
+
+        <!-- 第三部分：信封按钮 -->
+        <div class="button-container">
+            <h2 id="autotype2">99</h2>
+            <br>
+            <button class="envelope-button" 
+            onclick="handleClick()">✉️ 打开</button>
+        </div>
+    </div>
+
+    <script src="time.js"></script>
+</body>
+</html>

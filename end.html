@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>最后页面</title>
+    <style>
+        /* 全局样式 */
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('image/background.jpg'); 
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+            color: #333;
+            overflow: hidden;
+        }
+
+        .image-container {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* 圆形图片框 */
+            overflow: hidden;
+            margin-bottom: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .message {
+            font-size: 1.2em;
+            color: #000000;
+            overflow: hidden; /* 为打字机效果隐藏溢出的文字 */
+            white-space: nowrap;
+            border-right: 3px solid;
+            width: 0;
+            animation: typing 3s steps(30, end), blink-caret 0.5s step-end infinite;
+        }
+
+        .message-2 {
+            font-size: 1.2em;
+            color: #000000;
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 3px solid;
+            width: 0;
+            animation: typing 3s steps(30, end) 3s forwards, blink-caret 0.5s step-end infinite;
+        }
+
+        /* 打字机效果 */
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        /* 光标闪烁效果 */
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: black; }
+        }
+    </style>
+</head>
+<body>
+    <!-- 圆形图片框 -->
+    <div class="image-container">
+        <img src="image/1.jpg" alt="图片"> <!-- 替换为您图片的路径 -->
+    </div>
+
+    <!-- 打字机效果的文本 -->
+    <div class="message">这个网页很简单，但是将不断增加不断迭代，未来它会有上传图片以及上传文档的功能。</div>
+    <div class="message-2">我们的故事待续999999999……</div>
+</body>
+</html>

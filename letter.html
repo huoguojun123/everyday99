@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>letter💕</title>
+    <style>
+         /* 全局样式 */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #25a4cd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* 纵向布局，便于按钮放在盒子下方 */
+            height: 100vh;
+            margin: 0;
+            color: whitesmoke;
+            overflow: hidden;
+        }
+
+        .letter-content {
+            background-color: ivory;
+            color: black;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px 0px #ccc;
+            width: 100%;               /* 使盒子在小屏幕上占满宽度 */
+            max-width: 600px;          /* 限制最大宽度 */
+            height: 80%;
+            max-height: 500px;
+            overflow-y: auto;
+            text-align: left;
+            margin: 0 auto;             /* 确保在大屏幕上居中 */
+        }
+        .letter-content h1 {
+            font-size: 1.5em;
+            color: #333;
+            text-align: center;
+        }
+
+        .letter-content p {
+            line-height: 1.5;
+            font-size: 1em;
+        }
+
+        .to, .from {
+            font-weight: bold;
+        }
+
+        .from {
+            text-align: right;
+            margin-top: 20px;
+        }
+
+        /* 飘心效果样式 */
+        .heart {
+            position: absolute;
+            top: -10px;
+            color: #ffb6c1; /* 淡粉色 */
+            font-size: 1.5em;
+            opacity: 0.8;
+            animation-name: fall;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        /* 创建多个飘心元素 */
+        @keyframes fall {
+            0% {
+                transform: translateX(0) translateY(0) rotate(0deg);
+                opacity: 0.8;
+            }
+            100% {
+                transform: translateX(100px) translateY(100vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        /* 随机位置和延迟效果 */
+        .heart:nth-child(1) { left: 10%; animation-delay: 0s; }
+        .heart:nth-child(2) { left: 20%; animation-delay: 2s; }
+        .heart:nth-child(3) { left: 30%; animation-delay: 4s; }
+        .heart:nth-child(4) { left: 40%; animation-delay: 1s; }
+        .heart:nth-child(5) { left: 50%; animation-delay: 3s; }
+        .heart:nth-child(6) { left: 60%; animation-delay: 5s; }
+        .heart:nth-child(7) { left: 70%; animation-delay: 1.5s; }
+        .heart:nth-child(8) { left: 80%; animation-delay: 2.5s; }
+        .heart:nth-child(9) { left: 90%; animation-delay: 0.5s; }
+        .heart:nth-child(10) { left: 95%; animation-delay: 3.5s; }
+       /* 按钮样式 */
+       .next-button {
+            padding: 10px 20px;
+            background-color: #25a4cd;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .next-button:hover {
+            background-color: #1d8bb5;
+        }
+    </style>
+    
+</head>
+<body>
+    <!-- 飘心效果的元素 -->
+    <div class="heart">💖</div>
+    <div class="heart">💖</div>
+    <div class="heart">💖</div>
+    <div class="heart">💖</div>
+    <div class="heart">💖</div>
+    <div class="heart">💖</div>
+    <div class="heart">💖</div>
+    <div class="heart">💖</div>
+    <div class="heart">💖</div>
+    <div class="heart">💖</div>
+
+    <!-- 信件内容 -->
+    <div class="letter-content">
+        <h1>这是属于我的告白</h1>
+        <p class="to">亲爱的Qiu：</p>
+        <p>
+            不知从什么时候起（似乎是春天_(:D)∠)_），你的话总能牵动我的心，你告诉了我许多你自己的“小秘密”，我第一次感觉到，真正有一个人能够信任我，那时没有敢有别的想法，就是真正感觉你是一个能够交心的好朋友。
+        </p>
+        <p>
+            慢慢，我隐约感觉到，这段关系好像有点暧昧的味道，我怕是我多想，一朝被蛇咬……我不断说服自己，这段关系不过是排解无聊的调味料……这何算不上一种逃避？
+        </p>
+        <p>
+            那天下五子棋确切是有些奇怪的感觉，我感觉到温度好像发生了微妙的变化，我死脑筋还以为是你在逗我玩……我反思▄█▀█●
+        </p>
+        <p>
+            最好的关系是自然而然的，没有所谓死缠烂打，没有牵强没有什么妥协，我喜欢你的思维方式，我喜欢你的性格，谢谢你宝宝，表白需要很大的勇气，无论成功或者失败都要承担很大的压力。
+        </p>
+            
+        <p>
+            我特别喜欢听你讲话，听你讲身边的各种事，许多以我视角似乎从未观察到的事，我想这就是我们互补的部分。
+        </p>
+        <p>
+            宝贝，我们许多没有一起体验过的事情，分开时各自奔波，但时常期待相遇，时常思念代表着我的牵挂，这些我们终将一起走过。以前我似乎从来没说过“我爱你”这种抒情的话，你带给我太多新的习惯点，我爱你。
+        <p>
+            文采有限，短短四百多字我断断续续写了一个月，句句真言皆入心。
+        </p>
+        <p class="from">2024.11.12 爱你的霍国俊</p>
+    </div>
+     <!-- 跳转到最后页面的按钮 -->
+     <button class="next-button" onclick="goToLastPage()">最后</button>
+    <script>
+        function goToLastPage() {
+            window.location.href = 'end.html'; // 跳转到最后页面的文件
+        }
+    </script>
+</body>
+</html>
